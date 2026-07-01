@@ -49,7 +49,7 @@ export default function Home() {
             <div className="mt-9">
               <button
                 type="button"
-                className="btn-shiny px-8 py-3.5 text-sm font-semibold uppercase tracking-widest md:text-base"
+                className="btn-shiny px-5 py-3 text-xs font-semibold uppercase tracking-wider sm:px-8 sm:py-3.5 sm:text-sm sm:tracking-widest md:text-base"
               >
                 <span className="mirror" aria-hidden="true" />
                 <span className="relative z-10">

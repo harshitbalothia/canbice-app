@@ -187,13 +187,13 @@ export function ToolsSection() {
         </p>
 
         {/* stats */}
-        <div className="mt-8 inline-flex items-center gap-6 sm:gap-10 rounded-2xl border border-white/[0.07] bg-white/[0.03] px-6 sm:px-8 py-4 backdrop-blur-sm">
+        <div className="mt-8 flex items-center justify-center gap-4 sm:gap-10 rounded-2xl border border-white/[0.07] bg-white/[0.03] px-3 sm:px-8 py-3 sm:py-4 backdrop-blur-sm w-full sm:w-auto">
           {STATS.map((s, i) => (
             <React.Fragment key={s.label}>
               {i > 0 && <div className="w-px h-7 bg-white/10" />}
               <div className="text-center">
-                <p className="font-display text-xl sm:text-2xl font-bold text-white">{s.value}</p>
-                <p className="text-[10px] sm:text-xs text-white/35 mt-0.5">{s.label}</p>
+                <p className="font-display text-lg sm:text-2xl font-bold text-white">{s.value}</p>
+                <p className="text-[9px] leading-tight sm:text-xs text-white/35 mt-0.5">{s.label}</p>
               </div>
             </React.Fragment>
           ))}
@@ -239,7 +239,7 @@ export function ToolsSection() {
         }}
       >
         <p className="text-xs text-white/20 tracking-wide">
-          Hover over any row to pause · We continuously expand our toolkit
+          <span className="hidden sm:inline">Hover over any row to pause · </span>We continuously expand our toolkit
         </p>
       </div>
     </section>

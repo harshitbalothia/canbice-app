@@ -50,7 +50,7 @@ const item: Variants = {
 
 export function IndustriesSection() {
   return (
-    <section className="bg-black py-20">
+    <section className="bg-black py-14 sm:py-20">
       <div className="container mx-auto px-4">
 
         {/* Header */}
@@ -59,7 +59,7 @@ export function IndustriesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col items-center text-center mb-12"
+          className="flex flex-col items-center text-center mb-8 sm:mb-12"
         >
           <span className="inline-flex border border-white/15 py-1 px-4 rounded-full text-xs font-semibold tracking-widest uppercase text-white/50 bg-white/5 mb-5">
             Who We Work With

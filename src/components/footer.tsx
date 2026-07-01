@@ -66,7 +66,7 @@ export function Footer() {
                 damping: 18,
                 delay: i * 0.07,
               }}
-              className="block select-none font-display font-black text-glass"
+              className="block select-none font-display font-black text-white/[0.08]"
               style={{ fontSize: "clamp(2.5rem, 20.5vw, 24rem)", lineHeight: 1 }}
             >
               {letter}

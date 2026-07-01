@@ -163,18 +163,18 @@ export function TestimonialsSection() {
 
           <h2
             id="testimonials-heading"
-            className="text-4xl md:text-5xl font-extrabold tracking-tight mt-6 text-center text-white"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mt-6 text-center text-white"
           >
             What our clients say
           </h2>
-          <p className="text-center mt-5 text-white/50 text-lg leading-relaxed max-w-sm">
+          <p className="text-center mt-5 text-white/50 text-base sm:text-lg leading-relaxed max-w-sm">
             Brands that partnered with Canbice saw measurable growth — here&apos;s what they have to say.
           </p>
         </div>
 
         {/* Scrolling columns */}
         <div
-          className="flex justify-center gap-6 mt-10 max-h-[740px] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]"
+          className="flex justify-center gap-6 mt-10 max-h-[520px] sm:max-h-[740px] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]"
           role="region"
           aria-label="Scrolling client testimonials"
         >

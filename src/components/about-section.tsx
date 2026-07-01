@@ -123,7 +123,7 @@ export function AboutSection() {
 
           {/* ── Image column ──────────────────────────── */}
           <div
-            className="relative flex flex-col min-h-[420px] lg:min-h-0"
+            className="relative flex flex-col min-h-[260px] sm:min-h-[380px] lg:min-h-0"
             style={{
               opacity: visible ? 1 : 0,
               transform: visible ? "translateX(0) scale(1)" : "translateX(-40px) scale(0.96)",

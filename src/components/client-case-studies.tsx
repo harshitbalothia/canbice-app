@@ -225,11 +225,11 @@ const DARK_VARS: React.CSSProperties = {
 
 export function ClientCaseStudiesSection() {
   return (
-    <section className="bg-black py-24 px-6" style={DARK_VARS}>
+    <section className="bg-black py-16 sm:py-24 px-4 sm:px-6" style={DARK_VARS}>
       <div className="mx-auto max-w-7xl">
 
         {/* Header */}
-        <div className="mb-16 text-center">
+        <div className="mb-10 sm:mb-16 text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-gray-500">
             Our Work
           </p>
@@ -238,12 +238,14 @@ export function ClientCaseStudiesSection() {
             <span className="text-highlight">Case Studies</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-gray-400">
-            Hover a folder to explore our campaigns. Click any card to see the full case study.
+            <span className="hidden sm:inline">Hover a folder to explore our campaigns. </span>
+            <span className="sm:hidden">Tap a folder to explore our campaigns. </span>
+            Click any card to see the full case study.
           </p>
         </div>
 
         {/* Folder grid */}
-        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 justify-items-center">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-6 xl:grid-cols-6 justify-items-center">
           {caseStudies.map((folder) => (
             <AnimatedFolder
               key={folder.title}

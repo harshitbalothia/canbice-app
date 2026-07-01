@@ -279,14 +279,14 @@ export function AnimatedFolder({
     <>
       <div
         className={cn(
-          "group relative flex flex-col items-center gap-5 rounded-2xl border bg-card px-6 pt-7 pb-5",
+          "group relative flex flex-col items-center gap-4 sm:gap-5 rounded-2xl border bg-card px-3 pt-5 pb-4 sm:px-6 sm:pt-7 sm:pb-5",
           "transition-all duration-500 cursor-pointer",
           "border-border hover:border-accent/30 hover:shadow-2xl",
           className
         )}
         style={{ perspective: "1200px" }}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+        onPointerEnter={() => setIsHovered(true)}
+        onPointerLeave={() => setIsHovered(false)}
       >
         {/* ── 3D folder ── */}
         <div className="relative" style={{ width: 128, height: 96 }}>

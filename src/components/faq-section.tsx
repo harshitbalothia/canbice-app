@@ -136,11 +136,11 @@ export function FAQSection() {
   const toggle = (i: number) => setOpen((prev) => (prev === i ? null : i));
 
   return (
-    <section className="bg-black py-24 px-6">
+    <section className="bg-black py-16 sm:py-24 px-4 sm:px-6">
       <div className="mx-auto max-w-6xl">
 
         {/* Header */}
-        <div className="mb-14 text-center">
+        <div className="mb-10 sm:mb-14 text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-gray-500">
             Got Questions?
           </p>
